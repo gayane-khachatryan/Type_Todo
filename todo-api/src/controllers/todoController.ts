@@ -70,7 +70,7 @@ export async function destroyTodo(req: Request, res: Response) {
 
 export async function searchTodos(req: Request, res: Response) {
     try {
-        const qes = String(req.query.qes);
+        const qes = String(req.query.q ?? req.query.qes ?? "");
 
         const result = await searchTodo(qes);
 

@@ -1,5 +1,13 @@
 import { Router } from "express";
-import {getAllTodos} from "../controllers/todoController.ts";
+import {
+    addTodo,
+    destroyTodo,
+    editTodo,
+    getAllTodos,
+    getSingleTodo,
+    searchTodos,
+    updateStatus
+} from "../controllers/todoController.js";
 
 
 
